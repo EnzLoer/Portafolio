@@ -1,5 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,6 +6,7 @@
     <title>EnzLoer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="Iconos/favicon.png">
     <link rel="stylesheet" href="style-portafolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,37 +16,31 @@
 
 <header class="nav__container">
     <div class="logo">
-        <a href="#">ENZLOER</a>
+        ENZLOER
     </div>
     <nav class="nav__list">
-        <li class="nav__item"><a href="#about_Me">Acerca de mi</a></li>
+        <li class="nav__item"><a href="#about-me">Acerca de mi</a></li>
         <li class="nav__item"><a href="#skills">Habilidades</a></li>
         <li class="nav__item "><a href="#projects">Proyectos</a></li>
         <li class="nav__item nav__item-contact"><a href="#contact">Contacto</a></li>
     </nav>
-    <div class="nav__responsive">
-        ---
-    </div>
+    
 </header>
 
 <body>
-
     <div class="container">
         <section id="about-me">
             <span class="saludo">Hola a todos bienvenidos, soy</span>
             <h2>Enzo López Erazo</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam,
-                architecto beatae vitae dicta sunt explicabo.
-                Ut enim ad minima veniam, quis nostrum exercitationem
+            <p>Desarrollador de software con habilidades tanto en Front-End como en Back-End, cultivadas a lo largo de mi formación universitaria y proyectos personales.
                 <br>
-                ullam corporis suscipit laboriosam, nisi ut aliquid ex
-                ea commodi consequatur? Quis autem vel eum iure reprehenderit
-                quo voluptas nulla pariatur?
+                Próximo a graduarme en Ingeniería en Software de la Universidad Ecotec, estoy ansioso por integrarme a un equipo dinámico donde pueda canalizar mi entusiasmo por la tecnología y la innovación para impulsar el crecimiento y la excelencia en el desarrollo de software.
+                <br>
+                Espero con interés la oportunidad de mejorar mi carrera profesional, así como también contribuir al éxito del entorno que me brinde su apoyo
             </p>
+            
             <div class="buttons-container">
-                <button class="btn-am">Descargar CV<img src="Iconos/download.png"> </button>
-                <button class="btn-am">Contáctame<img src="Iconos/icons8-avión-de-papel-64.png"></button>
+                <button class="btn-am" onclick="downloadCV()">Descargar CV<img src="Iconos/download.png"></button>
             </div>
         </section>
     
@@ -110,29 +104,7 @@
                         <span>Html</span>
                         <span>CSS</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Porro quis sed rem saepe explicabo corrupti ipsa temporibus 
-                        voluptatem.
-                    </p>
-                        <button class="btn-am"><img src="Iconos/icons8-github-150.png"></button>
-                        <button class="btn-am"><img src="Iconos/icons8-flecha2-100.png"></button>
-                </div>
-            </div>
-
-            <div class="card_project">
-                <div class="img-contenedor">
-                    <img src="Iconos/Proyecto1.jpg" alt="">
-                </div>
-                <div class="card_body">
-                    <h4>Nombre Proyecto</h4>
-                    <div class="recursos">
-                        <span>JavaScript</span>
-                        <span>Html</span>
-                        <span>CSS</span>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Porro quis sed rem saepe explicabo corrupti ipsa temporibus 
-                        voluptatem.
+                    <p>Trabajando en ello
                     </p>
                         <button class="btn-am"><img src="Iconos/icons8-github-150.png"></button>
                         <button class="btn-am"><img src="Iconos/icons8-flecha2-100.png"></button>
@@ -150,9 +122,25 @@
                         <span>Html</span>
                         <span>CSS</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Porro quis sed rem saepe explicabo corrupti ipsa temporibus 
-                        voluptatem.
+                    <p>Trabajando en ello
+                    </p>
+                        <button class="btn-am"><img src="Iconos/icons8-github-150.png"></button>
+                        <button class="btn-am"><img src="Iconos/icons8-flecha2-100.png"></button>
+                </div>
+            </div>
+
+            <div class="card_project">
+                <div class="img-contenedor">
+                    <img src="Iconos/proximamente.png" alt="">
+                </div>
+                <div class="card_body">
+                    <h4>Nombre Proyecto</h4>
+                    <div class="recursos">
+                        <span>JavaScript</span>
+                        <span>Html</span>
+                        <span>CSS</span>
+                    </div>
+                    <p>Trabajando en ello
                     </p>
                         <button class="btn-am"><img src="Iconos/icons8-github-150.png"></button>
                         <button class="btn-am"><img src="Iconos/icons8-flecha2-100.png"></button>
@@ -163,18 +151,37 @@
 
         <section id="contact">
             <h2>Contacto</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/f23db4abf49030de32f3c7312ec96eca" method="POST">
                 <label>Ingrese su correo</label>
-                <input type="emails" placeholder="Email" class="inputs">
+                <input type="email" name="email" placeholder="Email" class="inputs" required>
                 <label>Ingrese Mensaje</label>
-                <textarea class="inputs"></textarea>
+                <textarea class="inputs" name="content" required></textarea>
                 <button>Enviar</button>
+
+                <input type="hidden" name="_next" value="https://enzloer.netlify.app/contact">
+                <input type="hidden" name="_captcha" value="false">
+
             </form>
         </section>
-
     </div>
-
-    <div class="footer"></div>
+    <div class="footer">
+        <span>ENZOL7053@GMAIL.COM</span>
+        <div class="card-contact box">
+            <a href="https://www.linkedin.com/in/enzloer/">
+                <img src="Iconos/icons8-linkedin-144.png" alt="Linkedin">
+            </a>
+        </div>
+        <div class="card-contact">
+            <a href="https://github.com/EnzLoer">
+                <img src="Iconos/icons8-github-150.png" alt="Github">
+            </a>
+        </div>
+        <div class="card-contact">
+            <a href="https://twitter.com/EnzLoer">
+                <img src="Iconos/icons8-twitterx-150.png" alt="Twitterx">
+            </a>
+        </div>
+    </div>
 </body>
-
+<script src="Js-code.js"></script>
 </html>
